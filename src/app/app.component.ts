@@ -1,14 +1,42 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { ResumeComponent } from './resume/resume.component';
+import { SkillIndexComponent } from './skill-index/skill-index.component';
+import { CommonModule } from '@angular/common';
+import { ExperienceComponent } from './experience/experience.component';
+import { CertificateComponent } from './certificate/certificate.component';
+import { myResume } from './model/resume.data';
+import { SkillOrder } from './model/resume.model';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ResumeComponent],
+  imports: [
+    CommonModule,
+    SkillIndexComponent,
+    ExperienceComponent,
+    CertificateComponent,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'resume';
+
+  resumeData = myResume;
+  skillOrder = SkillOrder;
+
+  getSkillTypes() {
+    return Object.values(SkillOrder);
+  }
+
+  getSkillByType(type: string) {
+    return this.resumeData.skills.filter(
+      (skill) => skill.type?.toString() === type
+    );
+  }
+
+  getExperiencesByType(type: string) {
+    return this.resumeData.experiences.filter(
+      (experience) => experience.type.toString() === type
+    );
+  }
 }
