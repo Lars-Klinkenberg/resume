@@ -3,7 +3,7 @@ import { SkillIndexComponent } from './skill-index/skill-index.component';
 import { CommonModule } from '@angular/common';
 import { ExperienceComponent } from './experience/experience.component';
 import { CertificateComponent } from './certificate/certificate.component';
-import { myResume } from './model/resume.data';
+import { myResume_en } from './model/resume.data';
 import { SkillOrder } from './model/resume.model';
 
 @Component({
@@ -21,7 +21,7 @@ import { SkillOrder } from './model/resume.model';
 export class AppComponent {
   title = 'resume';
 
-  resumeData = myResume;
+  resumeData = myResume_en;
   skillOrder = SkillOrder;
 
   getSkillTypes() {

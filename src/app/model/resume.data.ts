@@ -83,7 +83,7 @@ export const myResume: Resume = {
       type: SkillType.more,
       index: 0,
       maxIndex: 0,
-    },    
+    },
     {
       name: 'Docker, Kubernates, Maven, Jenkins',
       type: SkillType.more,
@@ -103,11 +103,7 @@ export const myResume: Resume = {
       maxIndex: 0,
     },
   ],
-  hobbies: [
-    'Klettern',
-    'Gaming',
-    'Programmieren z.B. mit Raspberry Pi'
-  ],
+  hobbies: ['Klettern', 'Gaming', 'Programmieren z.B. mit Raspberry Pi'],
   experiences: [
     {
       type: ExperienceType.work,
@@ -282,7 +278,7 @@ export const myResume_en: Resume = {
       type: SkillType.more,
       index: 0,
       maxIndex: 0,
-    },    
+    },
     {
       name: 'Docker, Kubernates, Maven, Jenkins',
       type: SkillType.more,
@@ -302,11 +298,7 @@ export const myResume_en: Resume = {
       maxIndex: 0,
     },
   ],
-  hobbies: [
-    'Climbing',
-    'Gaming',
-    'Programming e.g. with Raspberry Pi'
-  ],
+  hobbies: ['Climbing', 'Gaming', 'Programming e.g. with Raspberry Pi'],
   experiences: [
     {
       type: ExperienceType.work,
@@ -342,9 +334,7 @@ export const myResume_en: Resume = {
       startDate: '06/2019',
       endDate: '08/2019',
       descriptions: [
-        '- Creation of new website templates to display all possible functions of the system',
-        '- Introduction to more complex Java programming environments',
-        '- Programming of smaller functions',
+        'Assisted in the development of templates for a content management system and gained exposure to complex Java programming environments.',
       ],
     },
     // {
@@ -357,11 +347,23 @@ export const myResume_en: Resume = {
     // },
     {
       type: ExperienceType.education,
+      jobTitle: 'Distance Learning - Business Informatics',
+      company: 'Wilhelm büchner hochschule',
+      startDate: '04/2024',
+      endDate: '10/2025',
+      descriptions: [
+        "Pursuing a Bachelor's degree in Business Informatics through remote study, developing strong self-discipline and time management skills.",
+      ],
+    },
+    {
+      type: ExperienceType.education,
       jobTitle: 'Dual Studies - Business Information Management',
       company: 'Provadis School of International Management and Technology AG',
       startDate: '10/2020',
       endDate: '03/2024',
-      descriptions: ['Discontinued studies shortly before completing the bachelor\'s degree due to failure to pass the mathematics 2 examination.'],
+      descriptions: [
+        "Discontinued studies shortly before completing the bachelor's degree due to failure to pass the mathematics 2 examination.",
+      ],
     },
     {
       type: ExperienceType.education,
@@ -370,25 +372,25 @@ export const myResume_en: Resume = {
       startDate: '08/2017',
       endDate: '06/2020',
       descriptions: [
-        'Graduation as a state-certified \"informationstechnischer Assistent\"',
+        'Graduation as a state-certified "informationstechnischer Assistent"',
       ],
     },
-    {
-      type: ExperienceType.education,
-      jobTitle: 'Secondary school graduation',
-      company: 'Realschule Jüchen',
-      startDate: '08/2011',
-      endDate: '07/2017',
-      descriptions: [''],
-    },
-    {
-      type: ExperienceType.education,
-      jobTitle: 'Primary school graduation',
-      company: 'Grundschule Gierath',
-      startDate: '08/2007',
-      endDate: '06/2011',
-      descriptions: [''],
-    },
+    // {
+    //   type: ExperienceType.education,
+    //   jobTitle: 'Secondary school graduation',
+    //   company: 'Realschule Jüchen',
+    //   startDate: '08/2011',
+    //   endDate: '07/2017',
+    //   descriptions: [''],
+    // },
+    // {
+    //   type: ExperienceType.education,
+    //   jobTitle: 'Primary school graduation',
+    //   company: 'Grundschule Gierath',
+    //   startDate: '08/2007',
+    //   endDate: '06/2011',
+    //   descriptions: [''],
+    // },
   ],
   certifications: [
     {
@@ -404,5 +406,4 @@ export const myResume_en: Resume = {
       date: '07/2018',
     },
   ],
-
 };
