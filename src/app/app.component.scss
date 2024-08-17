@@ -28,14 +28,30 @@
                 font-size: 20px;
                 text-transform: none;
                 margin: 0;
-                margin-top: 10px;
             }
 
             .profile {
                 width: 200px;
                 width: 200px;
-                margin: 30px 0 50px 0;
+                margin: 20px 0;
                 border-radius: 50%;
+            }
+        }
+
+        .socials {
+            margin-top: 20px;
+
+            .social-info {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                text-align: right;
+                margin: 5px;
+
+                .social-logo {
+                    height: 30px;
+                }
             }
         }
 
