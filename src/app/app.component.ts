@@ -85,4 +85,8 @@ export class AppComponent {
   getSideHeaderLabelText(type: keyof SideHeaderTranslation) {
     return SideHeaderTranslations[type][this.currentLanguage];
   }
+
+  printPage() {
+    window.print();
+  }
 }
