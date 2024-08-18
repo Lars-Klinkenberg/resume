@@ -162,6 +162,16 @@ export const myResume: Resume = {
     // },
     {
       type: ExperienceType.education,
+      jobTitle: 'Fernstudium - Wirtschaftsinformatik',
+      company: 'Wilhelm Büchner Hochschule',
+      startDate: '04/2024',
+      endDate: '10/2025',
+      descriptions: [
+        "Ich verfolge ein Bachelorstudium in Wirtschaftsinformatik im Fernstudium und entwickle dabei eine starke Selbstdisziplin und Zeitmanagementfähigkeiten.",
+      ],
+    },
+    {
+      type: ExperienceType.education,
       jobTitle: 'Duales Studium -  Business Information Management',
       company: 'Provadis School of International Management and Technology AG',
       startDate: '10/2020',
@@ -364,7 +374,7 @@ export const myResume_en: Resume = {
     {
       type: ExperienceType.education,
       jobTitle: 'Distance Learning - Business Informatics',
-      company: 'Wilhelm büchner hochschule',
+      company: 'Wilhelm Büchner Hochschule',
       startDate: '04/2024',
       endDate: '10/2025',
       descriptions: [
