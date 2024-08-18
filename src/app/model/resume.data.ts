@@ -1,4 +1,12 @@
-import { ExperienceType, Resume, SkillType } from './resume.model';
+import {
+  SideHeaderTranslation,
+  SkillTypeTranslation,
+  SideHeader,
+  ExperienceType,
+  ExperienceTypeTranslation,
+  Resume,
+  SkillType,
+} from './resume.model';
 
 export const myResume: Resume = {
   personalData: {
@@ -414,4 +422,57 @@ export const myResume_en: Resume = {
       date: '07/2018',
     },
   ],
+};
+
+export const ExperienceTypeTranslations: ExperienceTypeTranslation = {
+  [ExperienceType.work]: {
+    EN: 'Work experience',
+    DE: 'Berufserfahrung',
+  },
+  [ExperienceType.education]: {
+    EN: 'Education',
+    DE: 'Bildungsweg',
+  },
+  [ExperienceType.project]: {
+    EN: 'Project',
+    DE: 'Projekt',
+  },
+};
+
+export const SkillTypeTranslations: SkillTypeTranslation = {
+  [SkillType.framework]: {
+    EN: 'Frameworks',
+    DE: 'Frameworks',
+  },
+  [SkillType.programming]: {
+    EN: 'Programming languages',
+    DE: 'Programmiersprachen',
+  },
+  [SkillType.other]: {
+    EN: 'Skills',
+    DE: 'Skills',
+  },
+  [SkillType.more]: {
+    EN: 'Other',
+    DE: 'Weitere',
+  },
+};
+
+export const SideHeaderTranslations: SideHeaderTranslation = {
+  [SideHeader.languages]: {
+    EN: 'Languages',
+    DE: 'Sprachen',
+  },
+  [SideHeader.knowledges]: {
+    EN: 'Knowledges',
+    DE: 'Kenntnisse',
+  },
+  [SideHeader.hobbys]: {
+    EN: 'Hobbys',
+    DE: 'Hobbys',
+  },
+  [SideHeader.certificates]: {
+    EN: 'Certificates',
+    DE: 'Zertifikate',
+  },
 };

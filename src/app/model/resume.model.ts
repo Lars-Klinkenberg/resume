@@ -1,3 +1,8 @@
+export enum AvailableLanguages {
+  GER = 'DE',
+  EN = 'EN',
+}
+
 export interface Resume {
   personalData: PersonalData;
   languages: Skill[];
@@ -29,9 +34,9 @@ export interface Experience {
 }
 
 export enum ExperienceType {
-  work = 'Berufserfahrung',
-  education = 'Bildungsweg',
-  project = 'Projekt',
+  work,
+  education,
+  project,
 }
 
 export interface Certificates {
@@ -40,20 +45,45 @@ export interface Certificates {
 }
 
 export enum SkillType {
-  programming = 'Programming languages',
-  framework = 'Frameworks',
-  other = 'skills',
-  more = 'others'
+  programming,
+  framework,
+  other,
+  more,
 }
 
 export const SkillOrder = {
   1: SkillType.programming,
   2: SkillType.framework,
   3: SkillType.other,
-  4: SkillType.more
+  4: SkillType.more,
 };
 
 export interface Link {
   name: string;
   url: string;
+}
+
+export enum SideHeader {
+  languages,
+  knowledges,
+  hobbys,
+  certificates,
+}
+
+export interface ExperienceTypeTranslation {
+  [key: string]: {
+    [lang in AvailableLanguages]: string;
+  };
+}
+
+export interface SkillTypeTranslation {
+  [key: string]: {
+    [lang in AvailableLanguages]: string;
+  };
+}
+
+export interface SideHeaderTranslation {
+  [key: string]: {
+    [lang in AvailableLanguages]: string;
+  };
 }

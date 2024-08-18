@@ -1,7 +1,9 @@
 <div class="topnav">
   <button id="download" class="topnav-btn">Download</button>
   <div class="vertical-spacer"></div>
-  <button id="language" class="topnav-btn">DE</button>
+  <button id="language" class="topnav-btn" (click)="changeLanguage()">
+    {{ getChangeLanguageLabelText() }}
+  </button>
 </div>
 <div class="resumePage">
   <div class="resumeSide">
@@ -54,7 +56,9 @@
     <div class="skillContainer">
       <div class="resumeHeader">
         <hr />
-        <h1>languages</h1>
+        <h1>
+          {{ getSideHeaderLabelText(sideHeader.languages) }}
+        </h1>
         <hr />
       </div>
       <resume-skill-index
@@ -66,13 +70,15 @@
 
       <div class="resumeHeader">
         <hr />
-        <h1>knowledges</h1>
+        <h1>
+          {{ getSideHeaderLabelText(sideHeader.knowledges) }}
+        </h1>
         <hr />
       </div>
 
       <div *ngFor="let skillType of getSkillTypes()">
         <h3>
-          {{ skillType }}
+          {{ getSkillTypeLabelText(skillType) }}
         </h3>
 
         <div class="skillsOfType">
@@ -90,7 +96,9 @@
     <!-- --- Hobbies --- -->
     <div class="resumeHeader">
       <hr />
-      <h1>Hobbys</h1>
+      <h1>
+        {{ getSideHeaderLabelText(sideHeader.hobbys) }}
+      </h1>
       <hr />
     </div>
     <div class="skillsOfType">
@@ -107,12 +115,12 @@
     <!-- --- Experiences --- -->
     <div class="resumeHeader">
       <hr />
-      <h1>Work experience</h1>
+      <h1>{{ getExperienceLabelText(experienceTypes.work) }}</h1>
       <hr />
     </div>
     <div class="allExperiences">
       <resume-experience
-        *ngFor="let experience of getExperiencesByType('Berufserfahrung')"
+        *ngFor="let experience of getExperiencesByType(experienceTypes.work)"
         [jobTitle]="experience.jobTitle"
         [company]="experience.company"
         [startDate]="experience.startDate"
@@ -126,12 +134,14 @@
 
     <div class="resumeHeader">
       <hr />
-      <h1>education</h1>
+      <h1>{{ getExperienceLabelText(experienceTypes.education) }}</h1>
       <hr />
     </div>
     <div class="allExperiences">
       <resume-experience
-        *ngFor="let experience of getExperiencesByType('Bildungsweg')"
+        *ngFor="
+          let experience of getExperiencesByType(experienceTypes.education)
+        "
         [jobTitle]="experience.jobTitle"
         [company]="experience.company"
         [startDate]="experience.startDate"
@@ -145,7 +155,9 @@
     <!-- --- Certifications --- -->
     <div class="resumeHeader">
       <hr />
-      <h1>certificates</h1>
+      <h1>
+        {{ getSideHeaderLabelText(sideHeader.certificates) }}
+      </h1>
       <hr />
     </div>
     <resume-certificate
