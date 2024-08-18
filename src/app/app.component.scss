@@ -33,7 +33,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 10px;
+    max-width: 1500px;
+    margin: auto;
     margin-top: 50px;
+    margin-bottom: 0;
 
     .resumeSide {
         max-width: min(100%, 350px);
@@ -98,8 +102,7 @@
 
     .resumeMain {
         flex-grow: 100;
-        min-width: min(100%, 500px);
-        max-width: calc(90% - 500px);
+        max-width: min(100%, 800px);
         margin: 10px;
 
         .allExperiences {
@@ -127,5 +130,13 @@
 
     .resumePage {
         margin-top: 0;
+
+        .resumeSide {
+            max-width: 30%;
+        }
+
+        .resumeMain {
+            max-width: 60%;
+        }
     }
 }
