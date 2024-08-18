@@ -12,7 +12,7 @@
     z-index: 100;
 
 
-    .vertical-spacer{
+    .vertical-spacer {
         height: 40%;
         margin: auto 10px;
         border-right: 2px solid black;
@@ -34,6 +34,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 50px;
+
     .resumeSide {
         max-width: min(100%, 350px);
         margin: 10px;
@@ -116,5 +117,15 @@
                 }
             }
         }
+    }
+}
+
+@media print {
+    .topnav {
+        display: none;
+    }
+
+    .resumePage {
+        margin-top: 0;
     }
 }
