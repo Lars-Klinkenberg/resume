@@ -107,6 +107,14 @@ export const myResume: Resume = {
   experiences: [
     {
       type: ExperienceType.work,
+      jobTitle: 'Werkstudent',
+      company: 'adesso SE',
+      startDate: '04/2024',
+      endDate: 'Heute',
+      descriptions: [''],
+    },
+    {
+      type: ExperienceType.work,
       jobTitle: 'Studienbegleitendes Praktikum als Fullstack-Entwickler',
       company: 'adesso SE',
       startDate: '10/2020',
