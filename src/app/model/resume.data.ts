@@ -123,7 +123,7 @@ export const myResume: Resume = {
     },
     {
       type: ExperienceType.work,
-      jobTitle: 'Studienbegleitendes Praktikum als Fullstack-Entwickler',
+      jobTitle: 'Studienbegleitendes Praktikum als Fullstack-Entwickler (32h / Woche)',
       company: 'adesso SE',
       startDate: '10/2020',
       endDate: '03/2024',
