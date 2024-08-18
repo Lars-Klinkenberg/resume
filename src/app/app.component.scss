@@ -41,6 +41,9 @@
 
     .resumeSide {
         max-width: min(100%, 350px);
+        // TODO : define max and min width
+        // min = 350px eg
+        // max = 30%
         margin: 10px;
 
 
@@ -60,6 +63,7 @@
                 font-size: 20px;
                 text-transform: none;
                 margin: 0;
+                margin-top: 10px;
             }
 
             .profile {
@@ -87,8 +91,12 @@
             }
         }
 
-        .skillContainer {
+        .skillsContainer {
             word-wrap: break-word;
+
+            .skillContainer{
+                break-inside: avoid; // Prevent splitting across pages
+            }
 
             .resumeHeader {
                 margin: 40px 0 20px 0;
@@ -103,6 +111,9 @@
     .resumeMain {
         flex-grow: 100;
         max-width: min(100%, 800px);
+        // TODO : define max and min width
+        // min = 500px eg
+        // max = 30%
         margin: 10px;
 
         .allExperiences {
@@ -133,6 +144,16 @@
 
         .resumeSide {
             max-width: 30%;
+
+            .personalData{
+                .name{
+                    font-size: 18px;
+                }
+
+                .jobTitle{
+                    font-size: 14px;
+                }
+            }
         }
 
         .resumeMain {
