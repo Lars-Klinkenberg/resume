@@ -3,7 +3,6 @@
 @mixin text-headline-large {
     font-weight: normal;
     font-size: 20px;
-    letter-spacing: 3px;
     text-transform: uppercase;
     color: $resume-main-headline-color;
 }
@@ -18,7 +17,6 @@
 @mixin text-headline-small {
     font-weight: bolder;
     font-size: 16px;
-    letter-spacing: 2px;
     text-transform: uppercase;
     color: $resume-sec-headline-color;
 }

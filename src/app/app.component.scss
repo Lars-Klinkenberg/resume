@@ -53,7 +53,6 @@
             .name {
                 font-weight: 700;
                 font-size: 25px;
-                letter-spacing: 5px;
                 text-transform: none;
                 margin: 0;
             }
@@ -88,13 +87,18 @@
                 .social-logo {
                     height: 30px;
                 }
+
+                .link {
+                    margin-left: 20px;
+
+                }
             }
         }
 
         .skillsContainer {
             word-wrap: break-word;
 
-            .skillContainer{
+            .skillContainer {
                 break-inside: avoid; // Prevent splitting across pages
             }
 
@@ -145,12 +149,12 @@
         .resumeSide {
             max-width: 30%;
 
-            .personalData{
-                .name{
+            .personalData {
+                .name {
                     font-size: 18px;
                 }
 
-                .jobTitle{
+                .jobTitle {
                     font-size: 14px;
                 }
             }
