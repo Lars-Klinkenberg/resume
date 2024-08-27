@@ -50,9 +50,9 @@ export class AppComponent {
     return this.resumeData.skills.filter((skill) => skill.type === type);
   }
 
-  getExperiencesByType(type: ExperienceType) {
+  getExperiencesByType(type: keyof typeof ExperienceType) {
     return this.resumeData.experiences.filter(
-      (experience) => experience.type === type
+      (experience) => experience.type.toString() == type
     );
   }
 

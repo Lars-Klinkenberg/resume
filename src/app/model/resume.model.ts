@@ -34,9 +34,9 @@ export interface Experience {
 }
 
 export enum ExperienceType {
-  work,
-  education,
-  project,
+  work = 1,
+  project = 2,
+  education = 3,
 }
 
 export interface Certificates {

@@ -115,45 +115,30 @@
   </div>
   <div class="resumeMain">
     <!-- --- Experiences --- -->
-    <div class="resumeHeader">
-      <hr />
-      <h1>{{ getExperienceLabelText(experienceTypes.work) }}</h1>
-      <hr />
-    </div>
-    <div class="allExperiences">
-      <resume-experience
-        *ngFor="let experience of getExperiencesByType(experienceTypes.work)"
-        [jobTitle]="experience.jobTitle"
-        [company]="experience.company"
-        [startDate]="experience.startDate"
-        [endDate]="experience.endDate"
-        [descriptions]="experience.descriptions"
-      >
-      </resume-experience>
-    </div>
+    <div *ngFor="let exp of experienceTypes | keyvalue">
+      <div *ngIf="getExperiencesByType(exp.key).length > 0">
+        <div class="resumeHeader">
+          <hr />
+          <h1>{{ getExperienceLabelText(exp.key) }}</h1>
+          <hr />
+        </div>
+        <div class="allExperiences">
+          <resume-experience
+            *ngFor="let experience of getExperiencesByType(exp.key)"
+            [jobTitle]="experience.jobTitle"
+            [company]="experience.company"
+            [startDate]="experience.startDate"
+            [endDate]="experience.endDate"
+            [descriptions]="experience.descriptions"
+          >
+          </resume-experience>
+        </div>
 
-    <div class="spacer-25"></div>
-
-    <div class="resumeHeader">
-      <hr />
-      <h1>{{ getExperienceLabelText(experienceTypes.education) }}</h1>
-      <hr />
-    </div>
-    <div class="allExperiences">
-      <resume-experience
-        *ngFor="
-          let experience of getExperiencesByType(experienceTypes.education)
-        "
-        [jobTitle]="experience.jobTitle"
-        [company]="experience.company"
-        [startDate]="experience.startDate"
-        [endDate]="experience.endDate"
-        [descriptions]="experience.descriptions"
-      >
-      </resume-experience>
+        <div class="spacer-25"></div>
+      </div>
     </div>
     <!-- --- End Experiences --- -->
-    <div class="spacer-25"></div>
+
     <!-- --- Certifications --- -->
     <div class="resumeHeader">
       <hr />
