@@ -31,6 +31,7 @@ export interface Experience {
   startDate: string;
   endDate: string;
   descriptions: string[];
+  technologys? : string[]
 }
 
 export enum ExperienceType {

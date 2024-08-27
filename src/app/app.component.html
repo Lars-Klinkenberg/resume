@@ -125,11 +125,7 @@
         <div class="allExperiences">
           <resume-experience
             *ngFor="let experience of getExperiencesByType(exp.key)"
-            [jobTitle]="experience.jobTitle"
-            [company]="experience.company"
-            [startDate]="experience.startDate"
-            [endDate]="experience.endDate"
-            [descriptions]="experience.descriptions"
+            [experienceData]="experience"
           >
           </resume-experience>
         </div>

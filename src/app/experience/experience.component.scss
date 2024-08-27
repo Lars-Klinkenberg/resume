@@ -43,4 +43,19 @@
             text-align: right;
         }
     }
+
+    .technology-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        .technology-chip{
+            margin: 0 2.5px;
+            padding: 3px 8px;
+            background-color: $light-grey;
+            color: $dark-grey;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+    }
 }

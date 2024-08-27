@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { Experience } from '../model/resume.model';
 
 @Component({
   selector: 'resume-experience',
@@ -9,18 +10,14 @@ import { Component, Input } from '@angular/core';
   styleUrl: './experience.component.scss',
 })
 export class ExperienceComponent {
-  @Input() jobTitle!: string;
-  @Input() company!: string;
-  @Input() startDate!: string;
-  @Input() endDate: string | undefined;
-  @Input() descriptions: string[] | undefined;
+  @Input() experienceData!: Experience;
 
   getDate() {
-    if (!this.endDate) return this.startDate;
-    if (this.endDate === this.startDate) {
-      return this.startDate;
+    if (!this.experienceData.endDate) return this.experienceData.startDate;
+    if (this.experienceData.endDate === this.experienceData.startDate) {
+      return this.experienceData.startDate;
     }
 
-    return `${this.startDate} - ${this.endDate}`;
+    return `${this.experienceData.startDate} - ${this.experienceData.endDate}`;
   }
 }

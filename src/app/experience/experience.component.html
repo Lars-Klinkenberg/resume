@@ -1,8 +1,18 @@
 <div class="experienceContainer">
-  <h3 class="companyName">{{ company }}</h3>
+  <h3 class="companyName">{{ experienceData.company }}</h3>
   <div class="experienceSubTitle">
-    <h2 class="jobTitle">{{ jobTitle }}</h2>
+    <h2 class="jobTitle">{{ experienceData.jobTitle }}</h2>
     <h2 class="date">{{ getDate() }}</h2>
   </div>
-  <p *ngFor="let description of descriptions">{{ description }}</p>
+  <p *ngFor="let description of experienceData.descriptions">
+    {{ description }}
+  </p>
+  <div class="technology-wrapper">
+    <span
+      class="technology-chip"
+      *ngFor="let technology of experienceData.technologys"
+    >
+      {{ technology }}
+    </span>
+  </div>
 </div>
