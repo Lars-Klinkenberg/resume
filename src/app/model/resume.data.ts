@@ -11,17 +11,17 @@ import {
 export const myResume: Resume = {
   personalData: {
     name: 'Lars Klinkenberg',
-    jobTitle: 'Full-Stack-Entwickler',
+    jobTitle: 'Full Stack Entwickler',
   },
   languages: [
     {
       name: 'Deutsch',
-      index: 4,
+      index: 5,
       maxIndex: 5,
     },
     {
       name: 'Englisch',
-      index: 3,
+      index: 4,
       maxIndex: 5,
     },
   ],
@@ -35,13 +35,13 @@ export const myResume: Resume = {
     {
       name: 'JavaScript / TypeScript',
       type: SkillType.programming,
-      index: 4,
+      index: 5,
       maxIndex: 5,
     },
     {
       name: 'Angular',
       type: SkillType.framework,
-      index: 4,
+      index: 5,
       maxIndex: 5,
     },
     {
@@ -59,7 +59,7 @@ export const myResume: Resume = {
     {
       name: 'MySQL',
       type: SkillType.programming,
-      index: 3,
+      index: 4,
       maxIndex: 5,
     },
     {
@@ -71,7 +71,7 @@ export const myResume: Resume = {
     {
       name: 'Scrum',
       type: SkillType.other,
-      index: 4,
+      index: 5,
       maxIndex: 5,
     },
     {
@@ -87,13 +87,13 @@ export const myResume: Resume = {
       maxIndex: 5,
     },
     {
-      name: 'C#, C PHP, Python',
+      name: 'C#, C, PHP, Python',
       type: SkillType.more,
       index: 0,
       maxIndex: 0,
     },
     {
-      name: 'Docker, Kubernates, Maven, Jenkins',
+      name: 'Docker, Kubernetes, Maven, Jenkins',
       type: SkillType.more,
       index: 0,
       maxIndex: 0,
@@ -111,72 +111,72 @@ export const myResume: Resume = {
       maxIndex: 0,
     },
   ],
-  hobbies: ['Klettern', 'Gaming', 'Programmieren z.B. mit Raspberry Pi'],
+  hobbies: ['Klettern', 'Gaming', 'Programmieren mit Raspberry Pi'],
   experiences: [
     {
       type: ExperienceType.work,
-      jobTitle: 'Werkstudent',
+      jobTitle: 'Werkstudent - Full Stack Entwickler',
       company: 'adesso SE',
       startDate: '04/2024',
-      endDate: 'Heute',
-      descriptions: [''],
-    },
-    {
-      type: ExperienceType.work,
-      jobTitle: 'Studienbegleitendes Praktikum als Fullstack-Entwickler (32h / Woche)',
-      company: 'adesso SE',
-      startDate: '10/2020',
-      endDate: '03/2024',
+      endDate: 'Aktuell',
       descriptions: [
-        'Ich habe meinen Fokus besonders auf die Frontendentwicklung gesetzt. Hier habe ich durch meine Arbeit in Kundenprojekten meine Kenntnisse in JavaScript und Angular weiter vertiefen können.',
-        'Ich war hauptsächlich in Kundenprojekten für Chatbotlösungen beschäftigt. Hier war ich Hauptverantwortlicher für die Anbindung im Frontend der Kundensysteme an den Servicebot. Zudem unterstützte ich die Entwicklung neuer Features.',
+        'Fortführung meiner Tätigkeit als Full Stack Entwickler, während ich mein Studium weiterführe, mit Fokus auf die Bereitstellung hochwertiger Lösungen für Kundenprojekte.',
       ],
     },
     {
       type: ExperienceType.work,
-      jobTitle: 'Freiwilliges Praktikum',
+      jobTitle: 'Full-Stack Entwickler (Praktikum - 32h/Woche)',
       company: 'adesso SE',
-      startDate: '08/2020',
-      endDate: '10/2020',
-      descriptions: [''],
+      startDate: '10/2020',
+      endDate: '03/2024',
+      descriptions: [
+        'Spezialisiert auf Frontend-Entwicklung mit JavaScript und Angular, umfangreiche Erfahrung in der Entwicklung und Wartung von kundenorientierten Funktionen.',
+        'Leitung der Integration von Chatbot-Lösungen in Kundensysteme, enge Zusammenarbeit mit funktionsübergreifenden Teams, um Geschäfts- und technische Anforderungen zu erfüllen.',
+      ],
+      technologys: ['Java', 'TypeScript', 'HTML', 'Angular'],
     },
     {
       type: ExperienceType.work,
-      jobTitle: 'Praktikum',
+      jobTitle: 'Freiwilliges Praktikum - Vorbereitung auf Full Stack Entwicklung',
+      company: 'adesso SE',
+      startDate: '08/2020',
+      endDate: '10/2020',
+      descriptions: [
+        'Vorbereitung auf die Rolle eines Full Stack Entwicklers durch das Erlernen grundlegender Fähigkeiten in Frontend- und Backend-Entwicklung.',
+      ],
+    },
+    {
+      type: ExperienceType.work,
+      jobTitle: 'Praktikant - Softwareentwickler',
       company: 'Regionales Rechenzentrum der Universität zu Köln',
       startDate: '06/2019',
       endDate: '08/2019',
       descriptions: [
-        '- Erstellung neuer Websitetemplates zur Darstellung aller möglichen Funktionen des Systems',
-        '- Einarbeitung in komplexere Java-Programmierumgebungen ',
-        '- Programmierung kleinerer Funktionen',
+        'Mitwirkung bei der Entwicklung neuer Funktionen für das Content Management System (CMS) der Universität zu Köln, Verbesserung der Funktionalität und Systemleistung.',
+        'Praktische Erfahrung in Java-Entwicklung in einer komplexen technischen Umgebung.',
       ],
+      technologys: ['Typo3', 'Java'],
     },
-    // {
-    //   type: ExperienceType.work,
-    //   jobTitle: 'Praktikum',
-    //   company: 'IT.NRW',
-    //   startDate: '04/2016',
-    //   endDate: '04/2016',
-    //   descriptions: [''],
-    // },
     {
       type: ExperienceType.education,
-      jobTitle: 'Fernstudium - Wirtschaftsinformatik',
+      jobTitle: "Bachelor-Studium in Wirtschaftsinformatik (Fernstudium)",
       company: 'Wilhelm Büchner Hochschule',
       startDate: '04/2024',
       endDate: '10/2025',
       descriptions: [
-        "Ich verfolge ein Bachelorstudium in Wirtschaftsinformatik im Fernstudium und entwickle dabei eine starke Selbstdisziplin und Zeitmanagementfähigkeiten.",
+        'Derzeit im Bachelor-Studiengang Wirtschaftsinformatik im Fernstudium, Stärkung der Fachkenntnisse in Informationstechnologie und Geschäftsprozessen.',
       ],
     },
     {
       type: ExperienceType.education,
-      jobTitle: 'Duales Studium -  Business Information Management',
+      jobTitle: 'Duales Studium - Business Information Management',
       company: 'Provadis School of International Management and Technology AG',
       startDate: '10/2020',
       endDate: '03/2024',
-      descriptions: [''],
+      descriptions: [
+        'Teilnahme an einem dualen Studium, das akademische Studien mit praktischen Arbeitserfahrungen kombiniert.',
+        'Erworbene fundierte Kenntnisse in Informationstechnologie und Geschäftsmanagement, einschließlich praktischer Erfahrungen in Systemanalyse, Softwareentwicklung und Geschäftsprozessoptimierung. Leider konnte ich das Programm nicht abschließen, da ich die letzte Mathematikprüfung nicht bestanden habe.'
+      ],
     },
     {
       type: ExperienceType.education,
@@ -184,25 +184,40 @@ export const myResume: Resume = {
       company: 'Berufskolleg Platz der Republik für Technik und Medien',
       startDate: '08/2017',
       endDate: '06/2020',
+      descriptions: ['Abschluss als staatlich geprüfter informationstechnischer Assistent mit spezialisierter Ausbildung in Softwareentwicklung und Systemadministration.'],
+    },
+    {
+      type: ExperienceType.project,
+      jobTitle: 'Smart Desk - IoT-Projekt',
+      company: 'Privates Projekt',
+      startDate: '05/2024',
+      endDate: 'Aktuell',
       descriptions: [
-        'Abschluss als staatlich geprüfter informationstechnischer Assistent',
+        'Entwicklung eines Smart Desk-Systems mit Raspberry Pi zur Überwachung und Steuerung der Tischhöhe und der Standzeit, Integration von Python und Angular mit MySQL zur Datenverwaltung.',
       ],
+      technologys: ['Python', 'Angular', 'MySQL'],
     },
     {
-      type: ExperienceType.education,
-      jobTitle: 'Qualifikationsvermerk',
-      company: 'Realschule Jüchen',
-      startDate: '08/2011',
-      endDate: '07/2017',
-      descriptions: [''],
+      type: ExperienceType.project,
+      jobTitle: 'Service Chatbot Integration',
+      company: 'adesso SE',
+      startDate: '01/2022',
+      endDate: 'Aktuell',
+      descriptions: [
+        'Leitende Rolle bei der Integration von Service-Chatbots für Großkunden wie toom Baumarkt und eprimo, Sicherstellung einer effizienten Zusammenarbeit zwischen internen und externen Teams zur Bereitstellung nahtloser Lösungen.',
+      ],
+      technologys: ['TypeScript', 'HTML', 'CSS'],
     },
     {
-      type: ExperienceType.education,
-      jobTitle: 'Abschluss der Grundschule',
-      company: 'Grundschule Gierath',
-      startDate: '08/2007',
-      endDate: '06/2011',
-      descriptions: [''],
+      type: ExperienceType.project,
+      jobTitle: 'Zeiterfassungssystem Entwicklung',
+      company: 'adesso SE',
+      startDate: '01/2021',
+      endDate: '01/2022',
+      descriptions: [
+        'Mitarbeit bei der Entwicklung eines Zeiterfassungssystems, Fokussierung auf Frontend- und Backend-Aspekte zur Optimierung der Systemleistung.',
+      ],
+      technologys: ['Angular', 'Node.js'],
     },
   ],
   certifications: [
@@ -214,27 +229,23 @@ export const myResume: Resume = {
       name: 'iSAQB - Certified Professional for Software Architecture, Foundation Level',
       date: '05/2022',
     },
-    {
-      name: 'CCNA Routing and Switching',
-      date: '07/2018',
-    },
   ],
 };
 
 export const myResume_en: Resume = {
   personalData: {
     name: 'Lars Klinkenberg',
-    jobTitle: 'Full-Stack-Developer',
+    jobTitle: 'Full Stack Developer',
   },
   languages: [
     {
       name: 'German',
-      index: 4,
+      index: 5,
       maxIndex: 5,
     },
     {
       name: 'English',
-      index: 3,
+      index: 4,
       maxIndex: 5,
     },
   ],
@@ -248,13 +259,13 @@ export const myResume_en: Resume = {
     {
       name: 'JavaScript / TypeScript',
       type: SkillType.programming,
-      index: 4,
+      index: 5,
       maxIndex: 5,
     },
     {
       name: 'Angular',
       type: SkillType.framework,
-      index: 4,
+      index: 5,
       maxIndex: 5,
     },
     {
@@ -272,7 +283,7 @@ export const myResume_en: Resume = {
     {
       name: 'MySQL',
       type: SkillType.programming,
-      index: 3,
+      index: 4,
       maxIndex: 5,
     },
     {
@@ -284,7 +295,7 @@ export const myResume_en: Resume = {
     {
       name: 'Scrum',
       type: SkillType.other,
-      index: 4,
+      index: 5,
       maxIndex: 5,
     },
     {
@@ -300,13 +311,13 @@ export const myResume_en: Resume = {
       maxIndex: 5,
     },
     {
-      name: 'C#, C PHP, Python',
+      name: 'C#, C, PHP, Python',
       type: SkillType.more,
       index: 0,
       maxIndex: 0,
     },
     {
-      name: 'Docker, Kubernates, Maven, Jenkins',
+      name: 'Docker, Kubernetes, Maven, Jenkins',
       type: SkillType.more,
       index: 0,
       maxIndex: 0,
@@ -324,99 +335,114 @@ export const myResume_en: Resume = {
       maxIndex: 0,
     },
   ],
-  hobbies: ['Climbing', 'Gaming', 'Programming e.g. with Raspberry Pi'],
+  hobbies: ['Climbing', 'Gaming', 'Programming with Raspberry Pi'],
   experiences: [
     {
       type: ExperienceType.work,
-      jobTitle: 'Working student',
+      jobTitle: 'Working Student - Full Stack Developer',
       company: 'adesso SE',
       startDate: '04/2024',
-      endDate: 'today',
-      descriptions: [''],
-    },
-    {
-      type: ExperienceType.work,
-      jobTitle: 'Study-related internship as Fullstack-Developer (32h/week)',
-      company: 'adesso SE',
-      startDate: '10/2020',
-      endDate: '04/2024',
+      endDate: 'Present',
       descriptions: [
-        'I focused particularly on frontend development. Here I was able to deepen my knowledge in JavaScript and Angular through my work in customer projects.',
-        'I was mainly involved in customer projects for chatbot solutions. Here I was responsible for the connection in the frontend of the customer systems to the service bot. I also supported the development of new features.',
+        'Continuing development work as a Full Stack Developer while balancing academic studies, with a focus on delivering high-quality solutions for client projects.',
       ],
     },
     {
       type: ExperienceType.work,
-      jobTitle: 'Voluntary internship',
+      jobTitle: 'Full-Stack Developer (Internship - 32h/Week)',
+      company: 'adesso SE',
+      startDate: '10/2020',
+      endDate: '03/2024',
+      descriptions: [
+        'Specialized in frontend development using JavaScript and Angular, with extensive experience in developing and maintaining client-facing features.',
+        'Led the integration of chatbot solutions into customer systems, collaborating closely with cross-functional teams to meet business and technical requirements.',
+      ],
+      technologys: ['Java', 'TypeScript', 'HTML', 'Angular'],
+    },
+    {
+      type: ExperienceType.work,
+      jobTitle: 'Voluntary Internship - Full Stack Development Preparation',
       company: 'adesso SE',
       startDate: '08/2020',
       endDate: '10/2020',
-      descriptions: [''],
+      descriptions: [
+        'Prepared for a Full Stack Developer role by learning foundational skills in both frontend and backend development.',
+      ],
     },
     {
       type: ExperienceType.work,
-      jobTitle: 'Internship',
-      company: 'Regional Computing Center of the University of Cologne',
+      jobTitle: 'Intern - Software Developer',
+      company: 'Regional Data Center of the University of Cologne',
       startDate: '06/2019',
       endDate: '08/2019',
       descriptions: [
-        'Assisted in the development of templates for a content management system and gained exposure to complex Java programming environments.',
+        'Contributed to the development of new features for the University’s Content Management System (CMS), enhancing functionality',
+        'Gained practical experience in Java development within a complex technical environment.',
       ],
+      technologys: ['Typo3', 'Java'],
     },
-    // {
-    //   type: ExperienceType.work,
-    //   jobTitle: 'Internship',
-    //   company: 'IT.NRW',
-    //   startDate: '04/2016',
-    //   endDate: '04/2016',
-    //   descriptions: [''],
-    // },
     {
       type: ExperienceType.education,
-      jobTitle: 'Distance Learning - Business Informatics',
+      jobTitle: "Bachelor's Degree in Business Informatics (Distance Learning)",
       company: 'Wilhelm Büchner Hochschule',
       startDate: '04/2024',
       endDate: '10/2025',
       descriptions: [
-        "Pursuing a Bachelor's degree in Business Informatics through remote study, developing strong self-discipline and time management skills.",
+        'Currently pursuing a Bachelor’s degree in Business Informatics through distance learning, strengthening expertise in both information technology and business processes.',
       ],
     },
     {
       type: ExperienceType.education,
-      jobTitle: 'Dual Studies - Business Information Management',
+      jobTitle: 'Dual Study Program - Business Information Management',
       company: 'Provadis School of International Management and Technology AG',
       startDate: '10/2020',
       endDate: '03/2024',
       descriptions: [
-        "Discontinued studies shortly before completing the bachelor's degree due to failure to pass the mathematics 2 examination.",
+        'Participated in a dual study program combining academic studies with practical work experience.',
+        'Gained a strong foundation in both information technology and business management, including hands-on experience in system analysis, software development, and business process optimization. Unfortunately, I was unable to complete the program due to not passing the final mathematics exam.'
       ],
-    },
+    },    
     {
       type: ExperienceType.education,
-      jobTitle: 'Technical College Entrance Qualification',
+      jobTitle: 'Vocational Diploma in Information Technology',
       company: 'Berufskolleg Platz der Republik für Technik und Medien',
       startDate: '08/2017',
       endDate: '06/2020',
-      descriptions: [
-        'Graduation as a state-certified "informationstechnischer Assistent"',
-      ],
+      descriptions: ['Graduated as a state-certified IT assistant, with specialized training in software development and systems administration.'],
     },
-    // {
-    //   type: ExperienceType.education,
-    //   jobTitle: 'Secondary school graduation',
-    //   company: 'Realschule Jüchen',
-    //   startDate: '08/2011',
-    //   endDate: '07/2017',
-    //   descriptions: [''],
-    // },
-    // {
-    //   type: ExperienceType.education,
-    //   jobTitle: 'Primary school graduation',
-    //   company: 'Grundschule Gierath',
-    //   startDate: '08/2007',
-    //   endDate: '06/2011',
-    //   descriptions: [''],
-    // },
+    {
+      type: ExperienceType.project,
+      jobTitle: 'Smart Desk - IoT Project',
+      company: 'Private Project',
+      startDate: '05/2024',
+      endDate: 'Present',
+      descriptions: [
+        'Developing a Smart Desk system using Raspberry Pi to monitor and control desk height and time spent standing, integrating Python and Angular with MySQL for data management.',
+      ],
+      technologys: ['Python', 'Angular', 'MySQL'],
+    },
+    {
+      type: ExperienceType.project,
+      jobTitle: 'Service Chatbot Integration',
+      company: 'adesso SE',
+      startDate: '01/2022',
+      endDate: 'Present',
+      descriptions: [
+        'Spearheaded the integration of service chatbots for major clients like toom Baumarkt and eprimo, ensuring efficient collaboration between in-house and partner teams to deliver seamless solutions.',
+      ],
+      technologys: ['TypeScript', 'HTML', 'CSS'],
+    },
+    {
+      type: ExperienceType.project,
+      jobTitle: 'Time Tracking System Development',
+      company: 'adesso SE',
+      startDate: '01/2021',
+      endDate: '01/2022',
+      descriptions: [
+        'Contributed to the development of a time tracking system, focusing on both frontend and backend aspects to optimize system performance.',
+      ],
+      technologys: ['Angular', 'Node.js'],
+    },
   ],
   certifications: [
     {
@@ -426,10 +452,6 @@ export const myResume_en: Resume = {
     {
       name: 'iSAQB - Certified Professional for Software Architecture, Foundation Level',
       date: '05/2022',
-    },
-    {
-      name: 'CCNA Routing and Switching',
-      date: '07/2018',
     },
   ],
 };
@@ -444,8 +466,8 @@ export const ExperienceTypeTranslations: ExperienceTypeTranslation = {
     DE: 'Bildungsweg',
   },
   [ExperienceType.project]: {
-    EN: 'Project',
-    DE: 'Projekt',
+    EN: 'Projects',
+    DE: 'Projekte',
   },
 };
 
