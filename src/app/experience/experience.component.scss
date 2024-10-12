@@ -1,7 +1,7 @@
 @use "_variables"as *;
 
 .experienceContainer {
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     padding-left: 20px;
     border-left: 1.5px solid $dark-grey;
     break-inside: avoid; // Prevent splitting across pages

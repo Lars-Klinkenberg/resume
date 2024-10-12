@@ -1,7 +1,16 @@
-.certificateName {
-    margin-bottom: 0;
-}
+.certificateContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 5px;
 
-.certificateDate {
-    margin: 0;
+    .certificateName {
+        margin: 0;
+    }
+
+    .certificateDate {
+        margin: 0;
+        margin-left: 10px;
+    }
 }
